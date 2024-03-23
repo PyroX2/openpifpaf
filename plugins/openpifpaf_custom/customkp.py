@@ -34,7 +34,7 @@ class CustomKp(openpifpaf.datasets.DataModule):
     pin_memory = False
 
     train_annotations = f'/usr/local/lib/python3.10/dist-packages/openpifpaf/anns/custom_person_keypoints_val2017.json'
-    val_annotations = f'/usr/local/lib/python3.10/dist-packages/openpifpaf/openpifpaf/anns/custom_person_keypoints_val2017.json'
+    val_annotations = f'/usr/local/lib/python3.10/dist-packages/openpifpaf/anns/custom_person_keypoints_val2017.json'
     eval_annotations = val_annotations
     train_image_dir = '/content/gdrive/MyDrive/coco_pose/images/val2017'
     val_image_dir = '/content/gdrive/MyDrive/coco_pose/images/val2017'
