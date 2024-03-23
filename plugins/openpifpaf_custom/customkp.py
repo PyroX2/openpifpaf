@@ -23,8 +23,9 @@ import openpifpaf.transforms
 from .constants import get_constants, training_weights_local_centrality
 from .metrics import MeanPixelError
 from ..coco.dataset import CocoDataset
+import os
 
-
+USER = os.environ['USER']
 class CustomKp(openpifpaf.datasets.DataModule):
     """
     DataModule for the Apollocar3d Dataset.
@@ -32,8 +33,8 @@ class CustomKp(openpifpaf.datasets.DataModule):
     debug = False
     pin_memory = False
 
-    train_annotations = '/home/jakub/inzynierka/custom_person_keypoints_val2017.json'
-    val_annotations = '/home/jakub/inzynierka/custom_person_keypoints_val2017.json'
+    train_annotations = f'/home/{USER}/.local/lib/python3.10/site-packages/openpifpaf/anns/custom_person_keypoints_val2017.json'
+    val_annotations = f'/home/{USER}/.local/lib/python3.10/site-packages/openpifpaf/anns/custom_person_keypoints_val2017.json'
     eval_annotations = val_annotations
     train_image_dir = '/media/jakub/One Touch/coco_pose/coco2017labels-pose/coco-pose/images/val2017'
     val_image_dir = '/media/jakub/One Touch/coco_pose/coco2017labels-pose/coco-pose/images/val2017'
