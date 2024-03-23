@@ -25,7 +25,7 @@ from .metrics import MeanPixelError
 from ..coco.dataset import CocoDataset
 import os
 
-USER = os.environ['USER']
+
 class CustomKp(openpifpaf.datasets.DataModule):
     """
     DataModule for the Apollocar3d Dataset.
