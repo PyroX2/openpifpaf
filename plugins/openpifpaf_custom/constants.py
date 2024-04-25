@@ -45,7 +45,7 @@ CUSTOM_SKELETON = [(i[0]-1, i[1]-1) for i in CUSTOM_SKELETON]
 
 
 CUSTOM_SIGMAS = [.025, .025, .035, .035, .079, .079, .072, .072, .062, .062, 0.107, 0.107, .087,
-        .087, .089, .089]
+        .087, .089, .089, .089]
 
 split, error = divmod(len(CUSTOM_KEYPOINTS), 4)
 CAR_SCORE_WEIGHTS_24 = [10.0] * split + [3.0] * split + \
