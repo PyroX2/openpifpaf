@@ -28,16 +28,16 @@ class CocoKp(openpifpaf.datasets.DataModule, openpifpaf.Configurable):
     debug = False
     pin_memory = False
 
-    _test2017_annotations = 'data-mscoco/annotations/image_info_test2017.json'
-    _testdev2017_annotations = 'data-mscoco/annotations/image_info_test-dev2017.json'
-    _test2017_image_dir = 'data-mscoco/images/test2017/'
+    _test2017_annotations = '/content/gdrive/MyDrive/coco_pose/annotations/person_keypoints_val2017.json'
+    _testdev2017_annotations = '/content/gdrive/MyDrive/coco_pose/annotations/person_keypoints_val2017.json'
+    _test2017_image_dir = '/content/gdrive/MyDrive/coco_pose/images/one_photo'
 
     # cli configurable
-    train_annotations = 'data-mscoco/annotations/person_keypoints_train2017.json'
-    val_annotations = 'data-mscoco/annotations/person_keypoints_val2017.json'
+    train_annotations = '/content/gdrive/MyDrive/coco_pose/annotations/person_keypoints_val2017.json'
+    val_annotations = '/content/gdrive/MyDrive/coco_pose/annotations/person_keypoints_val2017.json'
     eval_annotations = val_annotations
-    train_image_dir = 'data-mscoco/images/train2017/'
-    val_image_dir = 'data-mscoco/images/val2017/'
+    train_image_dir = '/content/gdrive/MyDrive/coco_pose/images/one_photo'
+    val_image_dir = '/content/gdrive/MyDrive/coco_pose/images/one_photo'
     eval_image_dir = val_image_dir
 
     square_edge = 385
