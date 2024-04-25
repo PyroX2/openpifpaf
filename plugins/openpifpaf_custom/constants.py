@@ -187,7 +187,8 @@ CUSTOM_STANDING_POSE = np.array([
     [-1.4, 2.0, 2.0],   # 'left_knee',       # 14
     [1.4, 2.0, 2.0],    # 'right_knee',      # 15
     [-1.4, 0.0, 2.0],   # 'left_ankle',      # 16
-    [1.4, 0.0, 2.0]])    # 'right_ankle',     # 17
+    [1.4, 0.0, 2.0],    # 'right_ankle',     # 17
+    [1.4, 0.0, 2.0]])   # 'head_top'         #18
 
 # CAR_POSE_FRONT_24 = np.array([
 #     [-2.0, 4.0, 2.0],  # 'front_up_right',         # 1
