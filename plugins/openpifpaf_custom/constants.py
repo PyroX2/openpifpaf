@@ -28,12 +28,14 @@ CUSTOM_KEYPOINTS = [
     'left_knee',       # 14
     'right_knee',      # 15
     'left_ankle',      # 16
-    'right_ankle' ]     # 17
+    'right_ankle',     # 17
+    'head_top' 
+]     
 
 CUSTOM_SKELETON = [
     (16, 14), (14, 12), (17, 15), (15, 13), (12, 13), (6, 12), (7, 13),
     (6, 7), (6, 8), (7, 9), (8, 10), (9, 11), (2, 3), (2, 4), (3, 5), 
-    (4, 6), (5, 7)
+    (4, 6), (5, 7), (18, 4), (18, 5)
 ]
 CUSTOM_SKELETON = [(i[0]-1, i[1]-1) for i in CUSTOM_SKELETON]
 
